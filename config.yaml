@@ -3,4 +3,4 @@ sources:
     url: https://www.kaggle.com/datasets/noeyislearning/pokdex/data
     output:
       folder_name: downloads/pokedex
-
+      schema_name: pokedex
