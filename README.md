@@ -23,3 +23,52 @@ On the terminal execute the following command
 ```
 
 This command will install all the required python dependencies and then will execute the main code
+
+```mermaid
+---
+title: Metadata Data Model
+---
+erDiagram
+
+
+    SCHEMAS ||--o{ TABLES : contains
+    TABLES ||--|{ COLUMNS : packs
+    COLUMNS }|..|| DATATYPES : uses
+    DATATYPES }|--|{ DATATYPES_PROPERTIES : has
+
+    SCHEMAS {
+    int id PK
+    str name
+    }
+
+    TABLES {
+    int id PK
+    int schema_id
+    str table_name
+    }
+
+    DATATYPES {
+    int id PK
+    str name
+    }
+
+    DATATYPES_PROPERTIES {
+    int id PK
+    str name
+    int datatype_id
+    str value
+    }
+
+    COLUMNS {
+    int id PK
+    str column_name
+    int table_id
+    int datatype
+    str description_
+    int owner
+    str use_case
+    datetime creation_date
+    datetime delete_date
+    }
+
+```
