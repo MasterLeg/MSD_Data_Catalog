@@ -9,10 +9,12 @@ def main() -> None:
     config_file_content: dict = load_config_file()
     PROJECT_PATH: Path = Path(os.getcwd())
 
-    output_file_path: str = PROJECT_PATH/'downloads'/'pokemon' # TODO: Use the config file folders path
-    input_url: str = 'https://www.kaggle.com/api/v1/datasets/download/noeyislearning/pokdex' # TODO: Use the config files URLs
+    for schema_source in config_file_content['sources']:
 
-    download_source_files(input_url, output_file_path)
+        output_file_path: str = PROJECT_PATH/schema_source['output']['folder_name']
+        input_url: str = schema_source['url']
+
+        download_source_files(input_url, output_file_path)
 
 
 if __name__ =='__main__':
