@@ -1,6 +1,6 @@
 sources:
   pokedex:
-    url: https://www.kaggle.com/datasets/noeyislearning/pokdex/data
+    url: https://www.kaggle.com/api/v1/datasets/download/noeyislearning/pokdex
     output:
       folder_name: downloads/pokedex
       schema_name: pokedex
