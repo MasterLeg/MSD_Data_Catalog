@@ -5,47 +5,47 @@ sources:
       folder_name: downloads/pokedex
       schema_name: pokedex
   movies:
-    url: https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?select=movies_metadata.csv
+    url: https://www.kaggle.com/api/v1/datasets/download/rounakbanik/the-movies-dataset
     output:
       folder_name: downloads/movies
       schema_name: movies
   netflix:
-    url: https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies?select=titles.csv
+    url: https://www.kaggle.com/api/v1/datasets/download/victorsoeiro/netflix-tv-shows-and-movies
     output:
       folder_name: downloads/netflix
       schema_name: netflix
   wdi:
-    url: https://www.kaggle.com/datasets/kaggle/world-development-indicators
+    url: https://www.kaggle.com/api/v1/datasets/download/kaggle/world-development-indicators
     output:
       folder_name: downloads/wdi
       schema_name: world_development_indicators
   european_soccer:
-    url: https://www.kaggle.com/datasets/hugomathien/soccer
+    url: https://www.kaggle.com/api/v1/datasets/download/hugomathien/soccer
     output:
       folder_name: downloads/soccer
       schema_name: european_soccer
   retail_rocket:
-    url: https://www.kaggle.com/datasets/retailrocket/ecommerce-dataset?select=item_properties_part1.csv
+    url: https://www.kaggle.com/api/v1/datasets/download/retailrocket/ecommerce-dataset
     output:
       folder_name: downloads/retail_rocket
       schema_name: retail_rocket
   amazon:
-    url: https://www.kaggle.com/datasets/datafiniti/consumer-reviews-of-amazon-products?select=Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products.csv
+    url: https://www.kaggle.com/api/v1/datasets/download/datafiniti/consumer-reviews-of-amazon-products
     output:
       folder_name: downloads/amazon
       schema_name: amazon
   taxi:
-    url: https://www.kaggle.com/datasets/atmarouane/nyc-taxi-trip-noisy
+    url: https://www.kaggle.com/api/v1/datasets/download/atmarouane/nyc-taxi-trip-noisy
     output:
       folder_name: downloads/taxi
       schema_name: taxi
   google_play_store:
-    url: https://www.kaggle.com/datasets/lava18/google-play-store-apps?select=googleplaystore.csv
+    url: https://www.kaggle.com/api/v1/datasets/download/lava18/google-play-store-apps
     output:
       folder_name: downloads/google
       schema_name: google_playstore
   instacart:
-    url: https://www.kaggle.com/datasets/psparks/instacart-market-basket-analysis?select=products.csv
+    url: https://www.kaggle.com/api/v1/datasets/download/psparks/instacart-market-basket-analysis
     output:
       folder_name: downloads/instacart
       schema_name: instacart
