@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS metadata.tables (
     id INT PRIMARY KEY,
     schema_id INT,
     table_name STRING,
-    FOREIGN KEY (schema_id) REFERENCES metadata.schema (id)
+    FOREIGN KEY (schema_id) REFERENCES metadata.schemas (id)
 );
 
 CREATE TABLE IF NOT EXISTS metadata.datatypes (
