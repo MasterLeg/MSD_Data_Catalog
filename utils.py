@@ -6,8 +6,7 @@ def create_folder(folder_path: Path) -> None:
     if not folder_path.exists:
         folder_path.mkdir()
 
-def load_config_file() -> dict:
-    CONFIG_FILE_NAME: str = 'config.yaml'
+def load_config_file(CONFIG_FILE_NAME: str = 'config.yaml') -> dict:
     PROJECT_PATH: Path = Path(os.getcwd())
 
     config_file_path: Path = PROJECT_PATH/CONFIG_FILE_NAME
