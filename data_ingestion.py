@@ -5,7 +5,8 @@ import zipfile
 
 from utils import create_folder
 
-def download_source_files(input_url: str, output_path: Path):
+def download_source_files(input_url: str, 
+                          output_path: Path) -> None:
 
     # Create output path
     create_folder(output_path)
@@ -26,6 +27,3 @@ def download_source_files(input_url: str, output_path: Path):
             output_file.write(zip_content)
 
     print('Saved files on ', output_path)
-
-def scrap_metadata() -> None:
-    pass
